@@ -22,18 +22,6 @@ function getTableFromInput() {
 	return doc.querySelector('tbody');
 }
 
-function getSupplierCode(SOPU) {
-	const suppliers = {
-		"8718906547001": "01 RDC",
-		"8714252002010": "06 Bloemen",
-		"8710400000075": "09 LDC",
-		"8711382000046": "10 Note",
-		"8712423014534": "14 Winkel inventaris",
-	}
-
-	return suppliers[SOPU];
-}
-
 function getFormattedRow(row) {
 	const datetime = row.querySelector("[data-field=DELIVERYTIME]").innerText.trim().replaceAll(".", "-").split(" ");
 
@@ -70,7 +58,7 @@ function getFormattedRow(row) {
         setTimeout(() => {
             tableRow.classList.remove('clicked');
         }, 500);
-});
+	});
 
     return tableRow;
 }
@@ -92,6 +80,13 @@ function copyAllRows() {
     }).join('\n');
 
 	navigator.clipboard.writeText(allData);
+
+	for (r of rows) {
+		r.classList.add('clicked');
+		setTimeout(() => {
+			r.classList.remove('clicked');
+		}, 500);
+	}
 }
 
 function convertTable() {

@@ -30,6 +30,6 @@ tr:hover {
     }
 }
 
-tr.clicked {
+.clicked {
 	animation: copiedEffect .5s ease-in-out;
 }
