@@ -61,9 +61,37 @@ function getFormattedRow(row) {
 		<td>${aantal}</td>
 		<td>${datum}</td>
 		<td>${stroom}</td>
-	`
+    `;
 
-	return tableRow;
+	// copy row on click
+	tableRow.addEventListener('click', () => {
+		copyRow(tableRow)
+		tableRow.classList.add('clicked');
+        setTimeout(() => {
+            tableRow.classList.remove('clicked');
+        }, 500);
+});
+
+    return tableRow;
+}
+
+function copyRow(row) {
+	let cells = row.querySelectorAll('td');
+    let rowData = Array.from(cells).map(cell => cell.innerText).join('\t');
+
+	navigator.clipboard.writeText(rowData);
+}
+
+function copyAllRows() {
+    let table = document.getElementById('outputTable');
+    let rows = table.querySelectorAll('tr');
+
+    let allData = Array.from(rows).map(row => {
+        let cells = row.querySelectorAll('td');
+        return Array.from(cells).map(cell => cell.innerText).join('\t');
+    }).join('\n');
+
+	navigator.clipboard.writeText(allData);
 }
 
 function convertTable() {
