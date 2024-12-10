@@ -11,7 +11,6 @@
     <textarea id="tableInput" rows="10" cols="50" placeholder="Plak de tabel hier"></textarea>
     <br>
     <button onclick="convertTable()">Update tabel</button>
-    <button onclick="copyAllRows()">Copy All</button>
 
 	<div style="width: fit-content;">
 		<table id="outputTable">
@@ -27,6 +26,7 @@
 				</tr>
 			</tbody>
 		</table>
+		<button id="copy-all-button" onclick="copyAllRows()">Copy All</button>
 	</div>
 </body>
 </html>

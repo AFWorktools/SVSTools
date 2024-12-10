@@ -22,6 +22,13 @@ function getTableFromInput() {
 	return doc.querySelector('tbody');
 }
 
+function animateClick(element) {
+	element.classList.add('clicked');
+	setTimeout(() => {
+		element.classList.remove('clicked');
+	}, 500);
+}
+
 function getFormattedRow(row) {
 	const datetime = row.querySelector("[data-field=DELIVERYTIME]").innerText.trim().replaceAll(".", "-").split(" ");
 
@@ -54,10 +61,7 @@ function getFormattedRow(row) {
 	// copy row on click
 	tableRow.addEventListener('click', () => {
 		copyRow(tableRow)
-		tableRow.classList.add('clicked');
-        setTimeout(() => {
-            tableRow.classList.remove('clicked');
-        }, 500);
+		animateClick(tableRow);
 	});
 
     return tableRow;
@@ -81,12 +85,9 @@ function copyAllRows() {
 
 	navigator.clipboard.writeText(allData);
 
-	for (r of rows) {
-		r.classList.add('clicked');
-		setTimeout(() => {
-			r.classList.remove('clicked');
-		}, 500);
-	}
+	animateClick(
+		document.getElementById('copy-all-button')
+	);
 }
 
 function convertTable() {
@@ -100,7 +101,7 @@ function convertTable() {
 		tbody.removeChild(tbody.lastChild);
 	}
 
-	for (row of inputTable.childNodes) {
+	for (row of inputTable.children) {
 		let newRow = getFormattedRow(row);
 		tbody.appendChild(newRow);
 	}
