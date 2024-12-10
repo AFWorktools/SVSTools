@@ -14,3 +14,22 @@ th {
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+tr:hover {
+	background-color: #f1f1f1;
+}
+
+@keyframes copiedEffect {
+    0% {
+        background-color: #f1f1f1;
+    }
+    50% {
+        background-color: #aaaaaa; /* Yellow color for the copied effect */
+    }
+    100% {
+        background-color: #f1f1f1;
+    }
+}
+
+tr.clicked {
+	animation: copiedEffect .5s ease-in-out;
+}
