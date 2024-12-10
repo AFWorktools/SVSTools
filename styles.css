@@ -18,6 +18,16 @@ tr:hover {
 	background-color: #f1f1f1;
 }
 
+#copy-all-button {
+	width: 100%;
+	padding: 10px;
+	background-color: #f2f2f2;
+	border: 1px solid #dddddd;
+	color: black;
+	border: none;
+	cursor: pointer;
+}
+
 @keyframes copiedEffect {
     0% {
         background-color: #f1f1f1;
@@ -30,6 +40,6 @@ tr:hover {
     }
 }
 
-tr.clicked {
+.clicked {
 	animation: copiedEffect .5s ease-in-out;
 }

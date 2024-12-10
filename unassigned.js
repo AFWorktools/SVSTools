@@ -22,16 +22,11 @@ function getTableFromInput() {
 	return doc.querySelector('tbody');
 }
 
-function getSupplierCode(SOPU) {
-	const suppliers = {
-		"8718906547001": "01 RDC",
-		"8714252002010": "06 Bloemen",
-		"8710400000075": "09 LDC",
-		"8711382000046": "10 Note",
-		"8712423014534": "14 Winkel inventaris",
-	}
-
-	return suppliers[SOPU];
+function animateClick(element) {
+	element.classList.add('clicked');
+	setTimeout(() => {
+		element.classList.remove('clicked');
+	}, 500);
 }
 
 function getFormattedRow(row) {
@@ -66,11 +61,8 @@ function getFormattedRow(row) {
 	// copy row on click
 	tableRow.addEventListener('click', () => {
 		copyRow(tableRow)
-		tableRow.classList.add('clicked');
-        setTimeout(() => {
-            tableRow.classList.remove('clicked');
-        }, 500);
-});
+		animateClick(tableRow);
+	});
 
     return tableRow;
 }
@@ -92,6 +84,10 @@ function copyAllRows() {
     }).join('\n');
 
 	navigator.clipboard.writeText(allData);
+
+	animateClick(
+		document.getElementById('copy-all-button')
+	);
 }
 
 function convertTable() {
@@ -105,7 +101,7 @@ function convertTable() {
 		tbody.removeChild(tbody.lastChild);
 	}
 
-	for (row of inputTable.childNodes) {
+	for (row of inputTable.children) {
 		let newRow = getFormattedRow(row);
 		tbody.appendChild(newRow);
 	}
