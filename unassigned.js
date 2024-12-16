@@ -86,8 +86,57 @@ function copyAllRows() {
 	navigator.clipboard.writeText(allData);
 
 	animateClick(
-		document.getElementById('copy-all-button')
+		document.getElementById('copyAllButton')
 	);
+}
+
+function copyToClipboard(text) {
+	if (navigator.clipboard && navigator.clipboard.writeText) {
+	  	return navigator.clipboard.writeText(text);
+	} else {
+		const textArea = document.createElement('textarea');
+		textArea.value = text;
+		document.body.appendChild(textArea);
+		textArea.select();
+		document.execCommand('copy');
+		document.body.removeChild(textArea);
+		return Promise.resolve();
+	}
+}
+
+function getBrowserSpecificSteps(browser) {
+    switch (browser) {
+        case 'chrome':
+            return `
+                <li>Open console (<b>ctrl+shift+j</b>)</li>
+                <li>Type <b>allow pasting</b></li>
+            `;
+        case 'edge':
+            return `
+                <li>Open console (<b>ctrl+shift+i</b>)</li>
+                <li>Type <b>allow pasting</b></li>
+            `;
+        case 'firefox':
+            return `
+                <li>Open console (<b>ctrl+shift+k</b>)</li>
+            `;
+        default:
+            return '';
+    }
+}
+
+
+function showSteps(event) {
+	const allButtons = document.querySelectorAll('#browserSelector button');
+	allButtons.forEach(button => button.classList.remove("buttonSelected"));
+
+	const button = event.target;
+	const browser = button.getAttribute('data-browser');
+
+	const specificContainer = document.querySelector("#browserSpecificSteps");
+	specificContainer.innerHTML = getBrowserSpecificSteps(browser);
+
+	button.classList.add("buttonSelected")
 }
 
 function convertTable() {
