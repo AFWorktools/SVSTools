@@ -8,11 +8,42 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <textarea id="tableInput" rows="10" cols="50" placeholder="Plak de tabel hier"></textarea>
-    <br>
-    <button onclick="convertTable()">Update tabel</button>
+	<div id="content">
 
-	<div style="width: fit-content;">
+		<div id="input">
+			<div id="howToContainer">
+				<div id="browserSelector">
+					<button onclick="showSteps(event)" data-browser="chrome" class="buttonSelected">Chrome</button>
+				<button onclick="showSteps(event)" data-browser="edge">Edge</button>
+				<button onclick="showSteps(event)" data-browser="firefox">Firefox</button>
+			</div>
+
+			<ol id="stepsTemplate">
+				<li>
+					Navigeer naar <b>User reports > Outbound > Unassigned LCs Transport</b>
+				</li>
+				<div id="browserSpecificSteps">
+					<li>Open console (<b>ctrl+shift+j</b>)</li>
+					<li>Type <b>allow pasting</b></li>
+				</div>
+				<li>
+					Kopieer <code id="codeToCopy">document.querySelector('table.k-selectable')</code> en plak het in de console bij User reports
+				</li>
+				<li>Kopieer de output als element</li>
+				<li>Plak de output in de textarea hieronder</li>
+				<li>Klik op update tabel</li>
+			</ol>
+		</div>
+
+		<div id="tableInputContainer">
+			<textarea id="tableInput" placeholder="Plak de tabel hier"></textarea>
+			<br>
+			<button onclick="convertTable()">Update tabel</button>
+		</div>
+	</div>
+
+	<div id="output">
+		<button id="copyAllButton" onclick="copyAllRows()">Copy All</button>
 		<table id="outputTable">
 			<tbody>
 				<tr>
@@ -26,33 +57,9 @@
 				</tr>
 			</tbody>
 		</table>
-		<button id="copyAllButton" onclick="copyAllRows()">Copy All</button>
 	</div>
-
-	<div id="howToContainer">
-		<div id="browserSelector">
-			<button onclick="showSteps(event)" data-browser="chrome" class="buttonSelected">Chrome</button>
-			<button onclick="showSteps(event)" data-browser="edge">Edge</button>
-			<button onclick="showSteps(event)" data-browser="firefox">Firefox</button>
-		</div>
-
-		<ol id="stepsTemplate">
-			<li>
-				Navigeer naar <b>User reports > Outbound > Unassigned LCs Transport</b>
-			</li>
-			<div id="browserSpecificSteps">
-				<li>Open console (<b>ctrl+shift+j</b>)</li>
-                <li>Type <b>allow pasting</b></li>
-			</div>
-			<li>
-				Kopieer <code id="codeToCopy">document.querySelector('table.k-selectable')</code> en plak het in de console bij User reports
-			</li>
-			<li>Kopieer de output als element</li>
-			<li>Plak de output in de textarea hiernaast</li>
-			<li>Klik op update tabel</li>
-		</ol>
+	</div>
 
 	<script src="main.js"></script>
-	</div>
 </body>
 </html>

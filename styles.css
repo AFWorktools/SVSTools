@@ -62,4 +62,28 @@ tr:hover {
 #howToContainer {
 	width: fit-content;
 	border: 1px solid black;
+	/* margin: 0 5px; */
+}
+
+/* #output {
+	width: fit-content;
+} */
+
+#input {
+	width: fit-content;
+}
+
+#tableInput {
+	width: 99%;
+	height: 10em;
+}
+
+#content {
+	display: flex;
+}
+
+#input, #output {
+    width: 100%; /* Set the width to 100% of the parent container */
+    max-width: 800px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the divs horizontally */
 }
