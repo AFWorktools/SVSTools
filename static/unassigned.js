@@ -1,10 +1,3 @@
-function animateClick(element) {
-	element.classList.add('clicked');
-	setTimeout(() => {
-		element.classList.remove('clicked');
-	}, 500);
-}
-
 function copyRow(row) {
 	let cells = row.querySelectorAll('td');
     let rowData = Array.from(cells).map(cell => cell.innerText).join('\t');
@@ -23,7 +16,5 @@ function copyAllRows() {
 
 	navigator.clipboard.writeText(allData);
 
-	animateClick(
-		document.getElementById('copy-all-button')
-	);
+	alert('Gekopieerd naar klembord!');
 }

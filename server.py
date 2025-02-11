@@ -25,7 +25,7 @@ def compare_excel():
     tool_data = request.form['toolInput']
     filtered_table = filter_table(vision_data, tool_data)
 
-    return render_template('compare.html', table=filtered_table)
+    return render_template('compare.html', table=filtered_table, vision_data=vision_data, tool_data=tool_data)
 
 if __name__ == '__main__':
     app.run(debug=True)

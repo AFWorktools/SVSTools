@@ -9,14 +9,9 @@
 {% endblock head %}
 
 {% block content %}
-    <form action="/compare" method="POST">
-        <textarea id="visionInput" name="visionInput" rows="10" cols="50" placeholder="Plak hier de vision unnasigned tabel"></textarea>
-        <textarea id="toolInput" name="toolInput" rows="10" cols="50" placeholder="Plak hier de excel tabel"></textarea>
-        <br>
-        <button type="submit">Filter ongeregistreerde containers</button>
-    </form>
-
-   <div style="width: fit-content;">
+<div class="contentWrapper">
+	<form action="/compare" method="POST">
+	<div>
 		<table id="outputTable">
 			<tbody>
 				<tr>
@@ -29,19 +24,48 @@
 					<th>Stroom</th>
 				</tr>
 				{% for row in table %}
-					<tr>
-						<td>{{ row.week }}</td>
-						<td>{{ row.day }}</td>
-						<td>{{ row.store }}</td>
-						<td>{{ row.time }}</td>
-						<td>{{ row.amount }}</td>
-						<td>{{ row.date }}</td>
-						<td>{{ row.type }}</td>
-					</tr>
+				<tr>
+					<td>{{ row.week }}</td>
+					<td>{{ row.day }}</td>
+					<td>{{ row.store }}</td>
+					<td>{{ row.time }}</td>
+					<td>{{ row.amount }}</td>
+					<td>{{ row.date }}</td>
+					<td>{{ row.type }}</td>
+				</tr>
 				{% endfor %}	
 			</tbody>
 		</table>
-		<button id="copy-all-button" onclick="copyAllRows()">Copy All</button>
+		<div id="buttonContainer">
+			<button class="click-button" type="submit">Update tabel</button>
+			<button class="click-button" id="copy-all-button" type="button" onclick="copyAllRows()">Kopieer</button>
+		</div>
 	</div>
-
+		<div id="formContent">
+			<div id="vision" class="inputContainer">
+				<h2>Vision data</h2>
+				<textarea id="visionInput" name="visionInput" rows="20" cols="70" placeholder="Plak hier de vision unnasigned tabel">{{ vision_data }}</textarea>
+				<ul>
+					<li>Navigeer naar User reports > OUTBOUND > Unassigned LCs Transport in vision</li>
+					<li>Selecteer alle waardes in de tabel</li>
+					<li>Druk op ctrl + c</li>
+					<li>Plak de data hieronder</li>
+				</ul>
+				<img src="../static/images/visionView.png" alt="vision view" width="650px">
+			</div>
+			<div id="tool" class="inputContainer">
+				<h2>Tool data</h2>
+				<textarea id="toolInput" name="toolInput" rows="20" cols="70" placeholder="Plak hier de excel tabel">{{ tool_data }}</textarea>
+				<ul>
+					<li>Ga naar de missende ladingdragers tool</li>	
+					<li>Selecteer een willekeurige (ingevulde) cell aan de controlroom kant</li>
+					<li>Druk op ctrl + a</li>
+					<li>Druk op ctrl + c</li>
+					<li>Plak de data hieronder</li>
+				</ul>
+				<img src="../static/images/excelView.png" alt="excel view" width="650px">
+			</div>
+		</div>
+	</form>
+</div>
 {% endblock content %}

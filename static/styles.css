@@ -18,14 +18,21 @@ tr:hover {
 	background-color: #f1f1f1;
 }
 
-#copy-all-button {
-	width: 100%;
+#buttonContainer {
+    display: flex;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+}
+
+.click-button {
 	padding: 10px;
-	background-color: #f2f2f2;
-	border: 1px solid #dddddd;
+	background-color: #f9f9f9;
 	color: black;
 	border: none;
 	cursor: pointer;
+    flex-grow: 1;
 }
 
 @keyframes copiedEffect {
@@ -42,4 +49,26 @@ tr:hover {
 
 .clicked {
 	animation: copiedEffect .5s ease-in-out;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.input {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formContent {
+    width: fit-content;
+    display: flex;
+}
+
+.contentWrapper {
+    width: fit-content;
 }

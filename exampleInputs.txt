@@ -1,0 +1,121 @@
+Vision:
+z-50-2-205	10.12.2024 15:15:00	1247	1	8710400000075	LDC GELDERMALSEN
+z-50-2-205	10.12.2024 15:15:00	1248	1	8710400000075	LDC GELDERMALSEN
+z-50-2-205	10.12.2024 15:15:00	1249	1	8710400000075	LDC GELDERMALSEN
+
+Tool:
+Controlroom blijven staan												
+WK	DG	Filiaal	Afl.tijd	Aantal	Locatie	Stroom	Oorzaak volgens cockpit	PendelNR	Naam	Tijd	Gemeld	Af
+6	1	1146	17:30	3	2-feb	06 Bloemen	502 Overig		Can		j	j
+6	1	1348	12:00	2	2-feb	10 Note	301 Transito te laat (AT)		Bert		j	j
+6	1	8515	15:00	1	3-feb	01 RDC	201 Over na optoppen (AT)		Bert		j	j
+6	1	8673	19:00	1	3-feb	09 LDC	502 Overig		Chris		j	j
+6	1	5868	19:45	2	3-feb	01 RDC	502 Overig	Wordt niet uitgereden	Chris		j	j
+6	1	5868	19:45	2	3-feb	09 LDC	502 Overig	Wordt niet uitgereden	Chris		j	j
+6	1	5868	19:45	1	3-feb	10 Note	502 Overig	Wordt niet uitgereden	Chris		j	j
+6	1	1598	18:00	5	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	1168	19:30	4	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	5557	19:00	2	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	
+6	1	1823	19:00	5	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	1490	17:45	4	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	8598	18:30	4	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	1232	19:30	5	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	4046	18:00	7	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	1080	18:00	5	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	1289	18:30	5	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	1282	17:00	5	3-feb	09 LDC	301 Transito te laat (AT)	104411	Chris		j	j
+6	1	1873	21:45	5	3-feb	09 LDC	301 Transito te laat (AT)	127434	Chris		j	j
+6	1	1001	21:00	7	3-feb	09 LDC	301 Transito te laat (AT)	127434	Chris		j	j
+6	1	2221	21:00	1	4-feb	01 RDC	101 Productie RDC (DC)		Deniz K		j	j
+6	2	1048	16:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	1062	15:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	1062	15:30	1	4-feb	06 Bloemen	502 Overig		Recai		j	j
+6	2	1062	15:30	1	4-feb	10 Note	502 Overig		Recai		j	j
+6	2	1247	15:15	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	1316	17:00	3	4-feb	09 LDC	502 Overig		Recai		j	j
+6	2	1316	17:00	1	4-feb	10 Note	502 Overig		Recai		j	j
+6	2	1316	17:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	1504	12:30	1	4-feb	01 RDC	502 Overig		Recai		j	j
+6	2	1594	11:00	1	4-feb	09 LDC	301 Transito te laat (AT)		Recai		j	j
+6	2	1628	15:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	2276	16:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	8635	14:15	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	8711	14:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	1155	16:30	1	4-feb	09 LDC	301 Transito te laat (AT)		Bert		j	j
+6	2	1146	17:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1148	16:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1166	15:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1354	18:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1406	16:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1425	17:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1482	19:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1554	17:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1598	18:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1628	15:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1633	18:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1823	19:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	2276	16:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	4025	18:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	4106	20:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	8512	20:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	8634	17:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	8635	14:15	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	8711	14:30	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Bert		j	j
+6	2	1033	16:15	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	1583	18:00	1	4-feb	14 Winkel inventaris	301 Transito te laat (AT)		Recai		j	j
+6	2	5865	21:00	8	4-feb	01 RDC	502 Overig	Wordt niet uitgereden	Deniz  		j	j
+6	2	5865	21:00	8	4-feb	09 LDC	502 Overig	Wordt niet uitgereden	Deniz  		j	j
+6	2	5865	21:00	2	4-feb	10 Note	502 Overig	Wordt niet uitgereden	Deniz  		j	j
+6	2	5873	21:00	1	4-feb	10 Note	502 Overig	Wordt niet uitgereden	Deniz  		j	j
+6	2	5873	21:00	3	4-feb	01 RDC	502 Overig	Wordt niet uitgereden	Deniz  		j	j
+6	2	5873	21:00	3	4-feb	09 LDC	502 Overig	Wordt niet uitgereden	Deniz  		j	j
+6	2	1080	18:00	1	5-feb	14 Winkel inventaris	301 Transito te laat (AT)		Deniz  		j	j
+6	2	1335	20:00	1	5-feb	14 Winkel inventaris	301 Transito te laat (AT)		Deniz  		j	j
+6	3	1568	7:00	2	5-feb	10 Note	502 Overig		Can 		j	j
+6	3	2218	10:45	1	5-feb	14 Winkel inventaris	502 Overig		Peter		j	j
+6	3	1302	8:00	3	5-feb	01 RDC	201 Over na optoppen (AT)		Bert		j	j
+6	3	1400	10:30	1	5-feb	01 RDC	201 Over na optoppen (AT)		Bert		j	j
+6	3	1832	11:30	1	5-feb	01 RDC	201 Over na optoppen (AT)		Bert		j	j
+6	3	1501	14:30	1	5-feb	10 Note	102 Drager kwijt (DC)	zoek	Bert		j	j
+6	3	1316	14:30	1	4-feb	09 LDC	201 Over na optoppen (AT)		Bert		j	j
+6	3	1316	14:30	1	4-feb	10 Note	201 Over na optoppen (AT)		Bert		j	j
+6	3	1316	14:30	1	4-feb	14 Winkel inventaris	201 Over na optoppen (AT)		Bert		j	j
+6	3	1129	16:30	2	5-feb	06 Bloemen	301 Transito te laat (AT)	Pendelnummer: 318732	Chris		j	j
+6	3	1554	17:00	2	5-feb	06 Bloemen	301 Transito te laat (AT)	Pendelnummer: 318732	Chris		j	j
+6	3	5833	15:30	1	5-feb	06 Bloemen	301 Transito te laat (AT)	Pendelnummer: 318732	Chris		j	j
+6	3	8755	14:45	2	5-feb	06 Bloemen	301 Transito te laat (AT)	Pendelnummer: 318732	Chris		j	j
+6	3	8702	22:00	1	5-feb	09 LDC	502 Overig	CH van rit 270 heeft verkeerd kar meegenomen	Fatih		j	j
+6	4	2221	22:00	1	6-feb	09 LDC	502 Overig	ch heeft deze container geladen maar niet meegenomen	Deniz  		j	j
+6	4	5413	5:45	1	6-feb	10 Note	301 Transito te laat (AT)		Deniz  		j	j
+6	4	1827	9:45	2	6-feb	01 RDC	502 Overig		Recai		j	j
+6	4	8507	15:30	2	6-feb	09 LDC	102 Drager kwijt (DC)	ZOEK	Francisco		j	j
+6	4	2221	22:00	1	6-feb	09 LDC	201 Over na optoppen (AT)		Chris		j	j
+6	4	1662	8:00	1	7-feb	10 Note	502 Overig		Deniz  		j	j
+6	5	1567	21:00	1	7-feb	01 RDC	101 Productie RDC (DC)		Martijn		j	j
+6	5	1562	12:15	1	7-feb	09 LDC	502 Overig		Martijn		j	j
+6	5	1449	13:00	1	7-feb	12 Communicatie Containers e/o Posttassen  	301 Transito te laat (AT)		Recai		j	j
+6	5	1662	8:00	2	8-feb	01 RDC	201 Over na optoppen (AT)		Martijn		j	j
+6	5	1117	12:00	1	7-feb	06 Bloemen	102 Drager kwijt (DC)	ZOEK	Martijn		j	j
+6	5	8507	15:30	2	7-feb	09 LDC	502 Overig	Zoek	Recai		j	j
+6	5	2314	11:15	1	7-feb	01 RDC	102 Drager kwijt (DC)	gevonden	Martijn		j	j
+6	5	1455	19:00	1	7-feb	01 RDC	201 Over na optoppen (AT)		Fatih		j	j
+6	5	1033	14:00	1	7-feb	12 Communicatie Containers e/o Posttassen  	301 Transito te laat (AT)		Fatih		j	j
+6	6	1824	9:45	2	8-feb	01 RDC	102 Drager kwijt (DC)	Zoek	Milanovic		j	j
+6	6	2257	10:30	1	8-feb	01 RDC	502 Overig		Milanovic		j	j
+6	6	1080	9:00	1	8-feb	09 LDC	502 Overig		Milanovic		j	j
+6	6	8527	16:00	1	8-feb	06 Bloemen	502 Overig		Milanovic		j	j
+6	6	1014	14:30	2	8-feb	01 RDC	201 Over na optoppen (AT)		Milanovic		j	j
+6	6	1048	16:00	1	8-feb	01 RDC	502 Overig		Eva		j	j
+6	6	4010	16:30	1	8-feb	10 Note	502 Overig		Eva		j	j
+6	6	1080	9:00	1	9-feb	01 RDC	502 Overig		Eva		j	j
+6	7	1322	7:45	3	9-feb	01 RDC	102 Drager kwijt (DC)	gevonden	Angus		j	j
+6	7	1275	9:45	2	9-feb	06 Bloemen	502 Overig		Rutger		j	j
+6	7	1554	17:00	3	9-feb	01 RDC	102 Drager kwijt (DC)		Rutger		j	j
+6	7	1525	16:00	1	9-feb	01 RDC	502 Overig		Marcos		j	j
+6	7	1317	13:00	1	9-feb	01 RDC	502 Overig		Marcos		j	j
+6	7	1482	19:30	1	9-feb	01 RDC	502 Overig		Marcos		j	j
+7	1	1146	17:30	1	10-feb	06 Bloemen	201 Over na optoppen (AT)		Peter		j	j
+7	1	1213	21:30	1	11-feb	12 Communicatie Containers e/o Posttassen  	502 Overig		Peter		j	
+7	1	4046	18:00	1	11-feb	12 Communicatie Containers e/o Posttassen  	502 Overig		Peter		j	
+7	1	1449	20:30	1	11-feb	12 Communicatie Containers e/o Posttassen  	502 Overig		Peter		j	
+
