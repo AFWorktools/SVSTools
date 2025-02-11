@@ -9,9 +9,11 @@
 {% endblock head %}
 
 {% block content %}
-	<textarea id="tableInput" rows="10" cols="50" placeholder="Plak de tabel hier"></textarea>
-	<br>
-	<button onclick="convertTable()">Update tabel</button>
+	<form action="/unassigned" method="POST">
+		<textarea id="tableInput" name="tableInput" rows="10" cols="50" placeholder="Plak de tabel hier"></textarea>
+		<br>
+		<button type="submit">Update tabel</button>
+	</form>
 
 	<div style="width: fit-content;">
 		<table id="outputTable">
@@ -25,6 +27,17 @@
 					<th>Datum</th>
 					<th>Stroom</th>
 				</tr>
+				{% for row in table %}
+					<tr>
+						<td>{{ row.week }}</td>
+						<td>{{ row.day }}</td>
+						<td>{{ row.store }}</td>
+						<td>{{ row.time }}</td>
+						<td>{{ row.amount }}</td>
+						<td>{{ row.date }}</td>
+						<td>{{ row.type }}</td>
+					</tr>
+				{% endfor %}	
 			</tbody>
 		</table>
 		<button id="copy-all-button" onclick="copyAllRows()">Copy All</button>

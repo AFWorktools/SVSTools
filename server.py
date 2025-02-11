@@ -1,5 +1,5 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, request, render_template
+from helpers import process_table_input
 
 app = Flask(__name__)
 
@@ -7,10 +7,14 @@ app = Flask(__name__)
 def index():
     return render_template('base.html')
 
-@app.route('/unassigned')
+@app.route('/unassigned', methods=['GET', 'POST'])
 def unassigned():
-    return render_template('unassigned.html') 
+    if request.method == 'POST':
+        table_input = request.form['tableInput']
+        processed_table = process_table_input(table_input)
+        return render_template('unassigned.html', table=processed_table)
+
+    return render_template('unassigned.html')
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run(host="0.0.0.0")
+    app.run(debug=True)
