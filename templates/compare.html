@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unassigned easy copy</title>
+	<script src="../static/unassigned.js"></script>
+	<link rel="stylesheet" href="../static/styles.css">
+{% endblock head %}
+
+{% block content %}
+    <form action="/compare" method="POST">
+        <textarea id="visionInput" name="visionInput" rows="10" cols="50" placeholder="Plak hier de vision unnasigned tabel"></textarea>
+        <textarea id="toolInput" name="toolInput" rows="10" cols="50" placeholder="Plak hier de excel tabel"></textarea>
+        <br>
+        <button type="submit">Filter ongeregistreerde containers</button>
+    </form>
+
+   <div style="width: fit-content;">
+		<table id="outputTable">
+			<tbody>
+				<tr>
+					<th>Week</th>
+					<th>Dag</th>
+					<th>Filiaal</th>
+					<th>Aflevertijd</th>
+					<th>Aantal</th>
+					<th>Datum</th>
+					<th>Stroom</th>
+				</tr>
+				{% for row in table %}
+					<tr>
+						<td>{{ row.week }}</td>
+						<td>{{ row.day }}</td>
+						<td>{{ row.store }}</td>
+						<td>{{ row.time }}</td>
+						<td>{{ row.amount }}</td>
+						<td>{{ row.date }}</td>
+						<td>{{ row.type }}</td>
+					</tr>
+				{% endfor %}	
+			</tbody>
+		</table>
+		<button id="copy-all-button" onclick="copyAllRows()">Copy All</button>
+	</div>
+
+{% endblock content %}
