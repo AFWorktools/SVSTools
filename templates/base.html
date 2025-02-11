@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    {% block head %}
+    {% endblock head %}
+</head>
+
+<title>{% block title %}{% endblock%}</title>
+<nav>
+    <h1>Tools</h1>
+    <ul>
+        <li>
+           <a href="/unassigned">Easy unassigned</a>
+        </li>
+        <!-- <li>
+            <a href="/packgroups">Packgroup overview</a>
+        </li> -->
+    </ul>
+</nav>
+
+<section class="content">
+    {% block content %}
+    {% endblock content %}
+</section>

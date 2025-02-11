@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends 'base.html' %}
+
+{% block head %}
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Unassigned easy copy</title>
-	<script src="unassigned.js"></script>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <textarea id="tableInput" rows="10" cols="50" placeholder="Plak de tabel hier"></textarea>
-    <br>
-    <button onclick="convertTable()">Update tabel</button>
+	<script src="../static/unassigned.js"></script>
+	<link rel="stylesheet" href="../static/styles.css">
+{% endblock head %}
+
+{% block content %}
+	<textarea id="tableInput" rows="10" cols="50" placeholder="Plak de tabel hier"></textarea>
+	<br>
+	<button onclick="convertTable()">Update tabel</button>
 
 	<div style="width: fit-content;">
 		<table id="outputTable">
@@ -28,5 +29,4 @@
 		</table>
 		<button id="copy-all-button" onclick="copyAllRows()">Copy All</button>
 	</div>
-</body>
-</html>
+{% endblock content %}
