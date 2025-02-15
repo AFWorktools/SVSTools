@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Unassigned easy copy</title>
-	<script src="unassigned.js"></script>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart copy - unassigned</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <textarea id="tableInput" rows="10" cols="50" placeholder="Plak de tabel hier"></textarea>
-    <br>
-    <button onclick="convertTable()">Update tabel</button>
+    <div class="center">
 
-	<div style="width: fit-content;">
-		<table id="outputTable">
-			<tbody>
-				<tr>
-					<th>Week</th>
-					<th>Dag</th>
-					<th>Filiaal</th>
-					<th>Aflevertijd</th>
-					<th>Aantal</th>
-					<th>Datum</th>
-					<th>Stroom</th>
-				</tr>
-			</tbody>
-		</table>
-		<button id="copy-all-button" onclick="copyAllRows()">Copy All</button>
-	</div>
+        <div class="contentWrapper">
+            <div>
+                <table id="outputTable">
+                    <tbody>
+                        <tr>
+                            <th>Week</th>
+                            <th>Dag</th>
+                            <th>Filiaal</th>
+                            <th>Aflevertijd</th>
+                            <th>Aantal</th>
+                            <th>Datum</th>
+                            <th>Stroom</th>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div id="buttonContainer">
+                    <button class="click-button" type="button" onclick="handleInput()">Update tabel</button>
+                    <button class="click-button" id="copy-all-button" type="button" onclick="copyAllRows()">Kopieer</button>
+                </div>
+            </div>
+            
+            <div id="instructions">
+                <div id="vision" class="inputContainer">
+                    <h2>Vision data</h2>
+                    <textarea id="visionInput" name="visionInput" rows="20" cols="70"
+                    placeholder="Plak hier de vision unnasigned tabel"></textarea>
+                    <ul>
+                        <li>Navigeer naar User reports > OUTBOUND > Unassigned LCs Transport in vision</li>
+                        <li>Selecteer alle waardes in de tabel</li>
+                        <li>Druk op ctrl + c</li>
+                        <li>Plak de data hierboven</li>
+                    </ul>
+                    <img src="images/visionView.png" alt="vision view" width="650px">
+                </div>
+                
+                <div id="tool" class="inputContainer">
+                    <h2>Tool data</h2>
+                    <textarea id="toolInput" name="toolInput" rows="20" cols="70"
+                    placeholder="Plak hier de excel tabel &#10;Laat leeg om alles in de table toe te voegen"></textarea>
+                    <ul>
+                        <li>Ga naar de missende ladingdragers tool</li>
+                        <li>Selecteer een willekeurige (ingevulde) cell aan de controlroom kant</li>
+                        <li>Druk op ctrl + a</li>
+                        <li>Druk op ctrl + c</li>
+                        <li>Plak de data hierboven</li>
+                    </ul>
+                    <img src="images/excelView.png" alt="excel view" width="650px">
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </div>
 </body>
 </html>
