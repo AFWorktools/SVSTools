@@ -159,7 +159,7 @@ function getUnregisteredRows(toolInput, visionRows) {
     for (row of visionRows) {
         const hash = `${row.store}-${row.time}-${row.amount}-${row.date}-${row.type}`;
 
-        if (toolHashmap[hash]) {
+        if (toolHashmap[hash] || !(hash in toolHashmap)) {
             filteredRows.push(row);
         }
     }
