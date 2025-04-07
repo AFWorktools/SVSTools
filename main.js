@@ -113,6 +113,7 @@ function parseVisionInput(visionInput) {
 
         const [day, month, year] = date.split('.'); // 11.01.2023 -> [11, 01, 2023]
         date = `${day}-${months[month - 1]}`; // 11-01-2023 -> 11-jan
+        date = date.replace(/^0/, ''); // 11-01-2023 -> 11-1-2023
 
         rows.push({
             week: currentWeek,
@@ -158,7 +159,7 @@ function getUnregisteredRows(toolInput, visionRows) {
     for (row of visionRows) {
         const hash = `${row.store}-${row.time}-${row.amount}-${row.date}-${row.type}`;
 
-        if (toolHashmap[hash]) {
+        if (toolHashmap[hash] || !(hash in toolHashmap)) {
             filteredRows.push(row);
         }
     }
