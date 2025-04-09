@@ -94,7 +94,7 @@ Date.prototype.getWeek = function () {
 function parseVisionInput(visionInput) {
     const rows = [];
 
-    const today = new Date("2025-02-15");
+    const today = new Date();
     const currentWeek = today.getWeek();
     const currentDay = today.getDay() || 7;
 
